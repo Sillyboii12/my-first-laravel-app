@@ -7,5 +7,7 @@
 </head>
 <body>
     <h1>My first laravel page</h1>
+
+    <a href="/about">About me</a>
 </body>
 </html>
