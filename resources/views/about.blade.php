@@ -13,10 +13,23 @@
 
     <a href="/">Return to homepage</a>
     <br>
+    <br>
+
+
+    <h2>People:</h2>
     <ul>
         @foreach ($users as $user)
-    <li>This is {{ $user["name"] . ", age " . $user["age"]}}</li>
-    @endforeach
+        <li>{{$user["name"]}}</li>
+        @endforeach
     </ul>
+
+    <br>
+    <h2>Cars:</h2>
+    <ul>
+        @foreach ($cars as $car)
+        <li>{{"Brand: ".$car->name.", year: ". $car->year}}</li>
+        @endforeach
+    </ul>
+
 </body>
 </html>
